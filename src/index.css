@@ -1,0 +1,41 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.game-wrapper {
+  min-width: 400px;
+  padding: 1rem;
+}
+@media (max-width: 375px) {
+  .game-wrapper {
+    min-width: 100vw;
+  }
+}
+
+.actionbar-icons {
+  display: flex;
+  gap: 5px;
+}
+.actionbar-icons img {
+  height: 30px;
+}
+
+.restart-arrow {
+  cursor: pointer;
+  background-color: #a9bec9;
+  box-shadow: -1px 4px #547485;
+  padding: 0.5rem;
+  border-radius: 10px;
+  max-width: 13%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  border: 0px solid;
+  color: #0e222b;
+  transition: box-shadow 100ms ease-in;
+}
+.restart-arrow:active {
+  box-shadow: -1px 2px #547485;
+}/*# sourceMappingURL=index.css.map */

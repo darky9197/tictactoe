@@ -1,0 +1,43 @@
+@use './scssDeps/deps';
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.game-wrapper {
+    min-width: 400px;
+    padding: 1rem;
+
+    @media(max-width: 375px){
+        min-width: 100vw;
+    }
+}
+
+.actionbar-icons {
+    display: flex;
+    gap: 5px;
+
+    img {
+        height: 30px;
+    }
+
+}
+
+.restart-arrow {
+    cursor: pointer;
+    background-color:deps.$secondary-clr-2;
+    box-shadow: -1px 4px darken(deps.$secondary-clr-2, 30%);
+    padding: .5rem;
+    border-radius: 10px;
+    max-width: 13%;
+    user-select: none;
+    border: 0px solid;
+    color: deps.$primary-clr-ac2;
+    transition: box-shadow 100ms ease-in;
+
+    &:active {
+        box-shadow: -1px 2px darken(deps.$secondary-clr-2, 30%);
+    }
+}
