@@ -7,7 +7,7 @@ import Actionbar from "./components/Actionbar";
 import Gamecontainer from "./components/Gamecontainer";
 import Scorebar from "./components/Scorebar";
 import Mainmenu from "./components/Mainmenu";
-import Winstate from "./components/winstate";
+import Winstate from "./components/Winstate";
 
 const MainContainer = styled.section`
   display: flex;
